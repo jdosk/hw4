@@ -1,0 +1,41 @@
+<% include partials/header.ejs %>
+
+        <header>
+            <h1>Relational Databases</h1>
+        </header>
+        
+<% include partials/nav.ejs %>  
+            
+            <div>
+                <h3>What are Relational Databases?</h3>
+                <p>Relational databases are databases that store information in relation to each other.
+                Data is sorted and stored on tables of rows and columns. Each table will have a primary "key" that is 
+                used to identify information, as well as allow tables to relate to each other. In this way,
+                relational databases can store and organize data that is easy to manipulate and gather. However,
+                relational databases scale vertically, meaning they rely soley on a single server to manage the 
+                database, so increases in data will also require an increase in the server capabilities in order
+                to keep performance levels the same.</p>
+            </div>
+            <figure>
+                <img id="pic" src="/img/relational.png" alt="Tables in a relational database">
+            </figure>
+            <div>
+                <p>For example, the image above contains three tables in a database. The first (top left) table
+                contains unique identifiers: itemid, and orderid. itemid is the primary key, or the
+                uniques identifier for each row in the table. As we can see orderid is also in the 
+                bottom table. These two tables are linked, or related, by the common identifying key.</p>
+            </div> 
+            <div id="list">
+                <h3>Popular relational databases:</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Oracle DB</li>
+                    <li>SQL Server</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+            
+        </main>
+        
+<% include partials/footer.ejs %>

@@ -1,0 +1,13 @@
+<main>
+           <nav>
+                <a class="nav" href="/">Home</a> <!-- Describe what data and databases are, SQL -->
+                <a class="nav" href="/dbms">DBMS</a> <!-- Most popular dbms -->
+                <a class="nav" href="/relational">Relational Databases</a> <!-- Relational database info -->
+                <a class="nav" href="/nosql">NoSQL</a> <!-- NoSQL database info -->
+            </nav>
+            
+            <script>
+            $(document).ready(function(){
+                $(".nav[href='" + location.pathname + "']").addClass("current_page");
+            });
+            </script>
